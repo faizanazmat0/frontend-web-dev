@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign Up - Muscle Factory Gym</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header>
+      <h1>📝 Sign Up for Muscle Factory Gym</h1>
+      <nav>
+        <p>
+          <a href="index.html">Home</a> |
+          <a href="signup.html">Signup</a>
+        </p>
+      </nav>
+    </header>
+
+    <!-- Form Section -->
+    <section>
+      <h2>💪 Start Your Fitness Journey Today!</h2>
+      <form action="">
+        <fieldset>
+          <legend><strong>👤 Personal Information</strong></legend>
+          <input
+            type="text"
+            id="name"
+            placeholder="Your Name"
+            required
+          /><br /><br />
+          <input
+            type="email"
+            id="email"
+            placeholder="Your Email"
+            required
+          /><br /><br />
+          <input
+            type="tel"
+            id="phone"
+            placeholder="03XX-XXXXXXX"
+            required
+          /><br /><br />
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+          <legend><strong>📦 Choose a Membership Plan</strong></legend>
+
+          <label for="plan">Select a Plan:</label><br />
+          <select id="plan" required>
+            <option value="">-- Select Plan --</option>
+            <option value="basic">💼 Basic Plan</option>
+            <option value="standard">🎯 Standard Plan</option>
+            <option value="gold">🥈 Gold Plan</option>
+            <option value="premium">🏆 Premium Plan</option>
+          </select>
+        </fieldset>
+
+        <br />
+
+        <button type="submit">🚀 Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
