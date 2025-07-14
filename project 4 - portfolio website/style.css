@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #272e36;
+  color: #f95352;
+}
+
+.intro-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+}
+.left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: slide-right 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.left-side h1 {
+  font-size: 40px;
+  color: white;
+}
+
+.left-side p {
+  max-width: 700px;
+  font-size: 16px;
+  line-height: 30px;
+  word-spacing: 3px;
+  color: white;
+  text-align: justify;
+}
+.left-side span {
+  color: #f95352;
+  font-weight: bold;
+}
+.social-icons a {
+  text-decoration: none;
+  margin-right: 30px;
+  color: #f95352;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.right-side img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 200px;
+  box-shadow: 6px 6px 12px 3px rgba(255, 255, 255, 0.5);
+  animation: slide-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/* Heading */
+.heading {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 12px;
+  margin: 0px 350px;
+  border-bottom: 2px solid #f95352;
+  animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+}
+
+/* Project */
+.project-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+}
+.project-card {
+  background-color: #f95352;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin-right: 20px;
+  box-shadow: 5px 5px 12px 0px rgba(245, 242, 242, 0.5);
+}
+
+.project-card a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.project-card h1 {
+  font-size: 25px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+  animation: focus-in-expand-fwd 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.project-card p {
+  text-align: justify;
+  font-size: 14px;
+  color: white;
+}
+
+.skills-used {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: 20px;
+  gap: 15px;
+  color: black;
+}
+.skills-used span {
+  font-size: 12px;
+  color: white;
+  background-color: black;
+  border: 1px solid none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
