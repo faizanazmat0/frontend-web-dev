@@ -135,3 +135,71 @@ body {
   transform: scale(1.1);
   transition: all 0.5s;
 }
+
+/* Education */
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 100px;
+}
+
+.education-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+}
+
+.education-content h1 {
+  font-size: 25px;
+  font-weight: 700;
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.education-content h4 {
+  font-size: 14px;
+  color: #f95352;
+}
+.education-content li {
+  font-size: 14px;
+  text-align: justify;
+}
+
+/* Skills */
+.skills-container {
+  background-color: beige;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 100px;
+  margin: 80px 0px;
+}
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 20px;
+}
+.skills span {
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.skills span:hover {
+  font-weight: 700;
+  transform: scale(1.1);
+  transition: all 0.5s;
+  background-color: #f95352;
+  color: black;
+  border: 1px solid #272e36;
+}
