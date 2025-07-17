@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Jost", sans-serif;
+}
+
+/* NavBar 1 */
+
+.nav1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #120f2d;
+  padding: 8px 70px;
+}
+
+.navLeft {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+
+.navLeft .navContact p {
+  font-size: 14px;
+  font-weight: 400;
+}
+.navLeft .navContact p i {
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.nav1-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  font-size: 16px;
+}
+.nav1-links a {
+  color: white;
+  cursor: pointer;
+}
+
+/* NavBar 2 */
+.nav2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 70px;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  color: #1465d9;
+}
+
+.logo a {
+  color: #1465d9;
+  font-size: 40px;
+}
+
+.logo h1 {
+  font-size: 40px;
+  color: #1465d9;
+}
+
+.nav2-links a {
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 22px;
+  color: #120f2d;
+}
+
+.nav2 .btn {
+  background-color: #1465d9;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: 500;
+}
