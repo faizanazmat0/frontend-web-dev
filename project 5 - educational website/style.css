@@ -87,3 +87,97 @@
   font-size: 16px;
   font-weight: 500;
 }
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 600px;
+  background-image: url("	https://themewagon.github.io/Edukate/img/header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.hero .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 101, 217, 0.9);
+  z-index: 1;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  z-index: 2;
+  margin-top: 140px;
+}
+
+.hero-content h2 {
+  font-size: 40px;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 100px;
+  color: white;
+}
+
+.hero-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  overflow: hidden;
+}
+
+.search-container select {
+  padding: 12px 16px;
+  border: none;
+  font-size: 18px;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  font-weight: bold;
+  color: #93929a;
+}
+.search-container input {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+}
+.search-container button {
+  background-color: #ee2a3d; /* red */
+  color: white;
+  padding: 0 30px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Section Separator */
+.section-seperator {
+  position: relative;
+  z-index: 10;
+  line-height: 0;
+  margin-top: -60px;
+  overflow: hidden;
+}
+.section-seperator img {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 10;
+}
