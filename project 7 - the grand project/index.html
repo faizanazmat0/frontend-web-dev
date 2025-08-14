@@ -233,5 +233,82 @@
         </div>
       </div>
     </div>
+
+    <!-- Book a Table Section Content would go here -->
+    <div class="book-a-table-container">
+      <div class="form-section">
+        <h1 class="form-title">Book A Table</h1>
+
+        <form id="reservationForm">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-input"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="tel"
+              class="form-input"
+              placeholder="Phone Number"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-input"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <div class="dropdown-wrapper">
+              <select class="dropdown-select" required>
+                <option value="" disabled selected>How many persons?</option>
+                <option value="1">1 Person</option>
+                <option value="2">2 Persons</option>
+                <option value="3">3 Persons</option>
+                <option value="4">4 Persons</option>
+                <option value="5">5 Persons</option>
+                <option value="more">More than 5</option>
+              </select>
+              <i class="fa-solid fa-caret-down dropdown-icon"></i>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input type="date" class="date-input" required />
+          </div>
+
+          <button type="submit" class="btn">BOOK NOW</button>
+        </form>
+      </div>
+
+      <div class="map-section">
+        <button class="fullscreen-btn">
+          <i class="fa-solid fa-expand"></i>
+        </button>
+
+        <div class="map-container">
+          <!-- Google Maps Embed - Replace with your restaurant's location -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3398.9987354801015!2d74.36601017442798!3d31.579082544240972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39191be342e0df6b%3A0x82db1edda2b576a5!2sCheezious%20-%20Baghbanpura!5e0!3m2!1sen!2s!4v1755178299021!5m2!1sen!2s"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
