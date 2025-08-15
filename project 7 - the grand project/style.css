@@ -531,7 +531,7 @@
 
 /* Testimonial Section Styling */
 .testimonial-container {
-  padding: 60px;
+  padding: 50px 90px;
 }
 
 .testimonial-heading {
@@ -555,7 +555,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 90px;
   gap: 30px;
   position: relative;
 }
@@ -623,4 +622,104 @@
 
 .testimonial-slider button:active {
   transform: scale(0.95);
+}
+
+/* Footer section Styling */
+.footer-container {
+  background-color: #222831;
+  color: #ffffff;
+  padding: 60px 40px 30px 40px;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.footer-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-heading h1 {
+  font-size: 36px;
+  margin-bottom: 25px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.footer-content .contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.footer-content .contact-item i {
+  margin-right: 8px;
+  color: #ffffff;
+  font-size: 18px;
+  width: 18px;
+}
+
+.footer-content .description {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 25px;
+}
+
+.footer-content .opening-hours {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons .social-icon {
+  width: 28px;
+  height: 28px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.social-icons .social-icon i:hover {
+  color: #ffbe33;
+}
+
+.social-icons .social-icon i {
+  color: #222831;
+  font-size: 16px;
+}
+
+.footer-end {
+  text-align: center;
+  padding: 40px 0 20px 0;
+  border-top: 1px solid #4a5464;
+  margin-top: 50px;
+}
+
+.footer-end h2 {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
 }
