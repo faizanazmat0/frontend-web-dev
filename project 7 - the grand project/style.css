@@ -21,8 +21,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-image: url("./images/hero-bg.jpg");
   background-size: cover;
   background-position: center;
@@ -722,4 +722,163 @@
   font-size: 16px;
   letter-spacing: 0.5px;
   color: #ffffff;
+}
+
+/* Responsive Website Styling */
+@media screen and (max-width: 600px) {
+  /* Feature section */
+  .feature-container {
+    flex-direction: column;
+  }
+  .feature-card {
+    width: 500px;
+  }
+  .feature-card img {
+    width: 170px;
+    height: 170px;
+  }
+  .feature-card-content h3 {
+    font-size: 24px;
+  }
+  .feature-card-content h1 {
+    font-size: 36px;
+  }
+  .feature-card-content span {
+    font-size: 20px;
+  }
+  .btn {
+    font-size: 16px;
+    padding: 10px 30px;
+  }
+
+  /* Menu Section */
+  .filter-menu {
+    gap: 8px;
+  }
+  .filter-menu li {
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 7px 20px;
+  }
+
+  /* Menu Card Section */
+  .menu-card-container {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 40px;
+  }
+  .menu-card {
+    width: 250px;
+  }
+  .menu-card-image {
+    padding: 20px;
+  }
+
+  /* View Button Section */
+  .view-more-btn {
+    margin: 50px 0;
+  }
+  .view-more-btn a {
+    padding: 20px 25px;
+  }
+
+  /* About Section */
+  .about-container {
+    padding: 90px 40px;
+  }
+  .about-image {
+    display: none;
+  }
+
+  .about-detail h2 {
+    font-size: 36px;
+  }
+  .about-detail p {
+    font-size: 17px;
+    line-height: 1.4;
+  }
+  .about-detail a {
+    font-size: 16px;
+    padding: 10px 40px;
+  }
+
+  /* Book A Table Section */
+  .book-a-table-container {
+    flex-direction: column;
+    padding: 90px 40px;
+    gap: 10px;
+  }
+  .form-title {
+    font-size: 38px;
+  }
+  .form-input {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+  .form-input::placeholder {
+    font-size: 16px;
+  }
+  .dropdown-select,
+  .dropdown-icon,
+  .date-input {
+    font-size: 16px;
+  }
+  .form-group button {
+    font-size: 16px;
+    margin: 0;
+  }
+  .map-container {
+    width: 86vw;
+    height: 300px;
+  }
+  /* Testimonial Section */
+  .testimonial-container {
+    padding: 70px 40px 50px;
+  }
+  .testimonial-heading {
+    margin-bottom: 40px;
+  }
+  .testimonial-heading h1 {
+    font-size: 40px;
+  }
+
+  .testimonial-wrapper {
+    flex-direction: column;
+  }
+
+  .testimonial-message {
+    padding: 20px 25px;
+    border-radius: 5px;
+  }
+  .testimonial-message p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .testimonial-message h2 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .testimonial-slider {
+    margin: 50px 0;
+  }
+
+  /* Footer section */
+  .footer-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .footer-heading h1 {
+    font-size: 30px;
+  }
+  .footer-content .contact-item i {
+    font-size: 14px;
+  }
+  .footer-content,
+  .contact-item,
+  .description,
+  .opening-hours {
+    font-size: 16px;
+  }
 }
