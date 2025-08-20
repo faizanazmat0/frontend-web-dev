@@ -447,16 +447,16 @@
 .form-input {
   width: 100%;
   padding: 15px 20px;
-  border: 2px solid #222831;
+  border: 2px solid #4a5464;
   border-radius: 8px;
   font-size: 18px;
-  color: #222831;
+  color: #4a5464;
   background: #ffffff;
   transition: all 0.3s ease;
 }
 
 .form-input::placeholder {
-  color: #222831;
+  color: #4a5464;
   font-size: 18px;
   font-weight: 400;
 }
@@ -469,10 +469,10 @@
 .dropdown-select {
   width: 100%;
   padding: 15px 20px;
-  border: 2px solid #222831;
+  border: 2px solid #4a5464;
   border-radius: 8px;
   font-size: 18px;
-  color: #222831;
+  color: #4a5464;
   background: #ffffff;
   appearance: none;
   cursor: pointer;
@@ -484,7 +484,7 @@
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
-  color: #222831;
+  color: #4a5464;
   font-size: 18px;
   pointer-events: none;
 }
@@ -492,10 +492,10 @@
 .date-input {
   width: 100%;
   padding: 15px 20px;
-  border: 2px solid #222831;
+  border: 2px solid #4a5464;
   border-radius: 8px;
   font-size: 18px;
-  color: #222831;
+  color: #4a5464;
   background: #ffffff;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -724,509 +724,48 @@
   color: #ffffff;
 }
 
-@media screen and (max-width: 1200px) {
-  /* Navbar Section */
+@media screen and (min-width: 600px) {
   .nav-hero {
-    height: 120vh;
     padding: 0;
-  }
-  .navbar-container {
-    padding: 25px 40px;
-  }
-  .logo a {
-    font-size: 32px;
-  }
-  .nav-links {
-    left: 50%;
-  }
-  .nav-links a {
-    font-size: 15px;
-  }
-
-  .nav-btn i {
-    font-size: 15px;
-  }
-
-  .bg-img {
-    height: 120vh;
-  }
-  .hero-container {
-    padding: 25px 40px;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-  .hero-content button {
-    font-size: 16px;
-    margin-top: 0;
-  }
-  /* Feature Section */
-  .feature-container {
-    gap: 30px;
-    padding: 40px;
-  }
-  .feature-card-content {
-    padding: 0 15px;
-  }
-  .feature-card {
-    width: 600px;
-    padding: 20px;
-  }
-  .feature-card img {
-    width: 170px;
-    height: 170px;
-    margin-right: 0;
-  }
-
-  .feature-card-content h3 {
-    font-size: 24px;
-  }
-  .feature-card-content h1 {
-    font-size: 40px;
-  }
-  .feature-card-content span {
-    font-size: 16px;
-  }
-  .btn {
-    font-size: 16px;
-    padding: 10px 35px;
-  }
-
-  /* Menu Section */
-  .menu-container h1 {
-    padding: 0 0 25px;
-  }
-  .filter-menu {
-    gap: 8px;
-  }
-  .filter-menu li {
-    font-size: 18px;
-    margin-top: 20px;
-    padding: 7px 20px;
-  }
-
-  /* Menu Card Section */
-  .menu-card-container {
-    flex-wrap: wrap;
-    padding: 0 25px;
-    gap: 25px 10px;
-  }
-  .menu-card {
-    width: 360px;
-  }
-  .menu-card-image {
-    padding: 20px;
-  }
-
-  /* View Button Section */
-  .view-more-btn {
-    margin: 50px 0 100px;
-  }
-  .view-more-btn a {
-    padding: 20px 25px;
-  }
-
-  /* About Section */
-  .about-container {
-    padding: 90px 40px;
-  }
-  .about-content {
-    gap: 0 30px;
-    margin: 0;
-  }
-
-  .about-detail h2 {
-    font-size: 40px;
-  }
-  .about-detail p {
-    font-size: 17px;
-    line-height: 1.6;
-  }
-  .about-detail a {
-    font-size: 16px;
-    padding: 10px 40px;
-  }
-
-  /* Book A Table Section */
-  .book-a-table-container {
-    padding: 90px 40px 60px;
-    gap: 20px;
-  }
-  .form-section {
-    min-width: 450px;
-  }
-  .form-title {
-    font-size: 40px;
-  }
-  .form-input {
-    font-size: 16px;
-    padding: 12px 20px;
-  }
-  .form-input::placeholder {
-    font-size: 16px;
-  }
-  .dropdown-select,
-  .dropdown-icon,
-  .date-input {
-    font-size: 16px;
-  }
-  .form-group button {
-    font-size: 16px;
-    margin: 0;
-  }
-  .map-section {
-    top: 80px;
-  }
-
-  .map-container {
-    width: 50vw;
-    height: 360px;
-    top: 0;
-    right: 0;
-  }
-  .fullscreen-btn {
-    top: 10px;
-  }
-  /* Testimonial Section */
-  .testimonial-container {
-    padding: 0 40px;
-  }
-  .testimonial-heading {
-    margin-bottom: 40px;
-  }
-  .testimonial-heading h1 {
-    font-size: 40px;
-  }
-
-  .testimonial-wrapper {
-    gap: 0 20px;
-  }
-
-  .testimonial-message {
-    padding: 20px 25px;
-    border-radius: 5px;
-  }
-  .testimonial-message p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
-  .testimonial-message h2 {
-    font-size: 20px;
-    font-weight: 400;
-  }
-  .testimonial-slider {
-    margin: 50px 0 80px;
-  }
-
-  /* Footer section */
-  .footer-wrapper {
-    gap: 20px;
-  }
-  .footer-heading h1 {
-    font-size: 30px;
-  }
-  .footer-content .contact-item i {
-    font-size: 14px;
-  }
-  .footer-content,
-  .contact-item,
-  .description,
-  .opening-hours {
-    font-size: 16px !important;
-  }
-}
-
-/* Resposnive for the Screen width 992px */
-@media screen and (max-width: 992px) {
-  /* Navbar Section */
-  .nav-hero {
-    height: 120vh;
-    padding: 0;
-  }
-  .navbar-container {
-    padding: 25px 40px;
-  }
-  .logo a {
-    font-size: 32px;
-  }
-  .nav-links {
-    left: 40%;
-  }
-  .nav-links a {
-    font-size: 15px;
-  }
-
-  .nav-btn i {
-    font-size: 15px;
-  }
-
-  .bg-img {
-    height: 120vh;
-  }
-  .hero-container {
-    padding: 25px 40px;
-  }
-  .hero-content {
-    max-width: 450px;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
-    line-height: 1.4;
-  }
-  .hero-content button {
-    font-size: 16px;
-    margin-top: 0;
-  }
-  /* Feature Section */
-  .feature-container {
-    gap: 30px;
-    padding: 40px;
-  }
-  .feature-card {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 450px;
-    padding: 20px 10px;
-  }
-  .feature-card img {
-    width: 170px;
-    height: 170px;
-    margin-right: 0;
-  }
-  .feature-card-content {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 20px;
-    margin-top: 10px;
-  }
-  .feature-card-content h3 {
-    font-size: 24px;
-  }
-  .feature-card-content h1 {
-    font-size: 40px;
-  }
-  .feature-card-content span {
-    font-size: 16px;
-  }
-  .btn {
-    font-size: 16px;
-    padding: 10px 35px;
-  }
-
-  /* Menu Section */
-  .menu-container h1 {
-    padding: 0 0 25px;
-  }
-  .filter-menu {
-    gap: 8px;
-  }
-  .filter-menu li {
-    font-size: 18px;
-    margin-top: 20px;
-    padding: 7px 20px;
-  }
-
-  /* Menu Card Section */
-  .menu-card-container {
-    flex-wrap: wrap;
-    padding: 0 25px;
-    gap: 25px 10px;
-  }
-  .menu-card {
-    width: 300px;
-  }
-  .menu-card-image {
-    padding: 20px;
-  }
-
-  /* View Button Section */
-  .view-more-btn {
-    margin: 50px 0 100px;
-  }
-  .view-more-btn a {
-    padding: 20px 25px;
-  }
-
-  /* About Section */
-  .about-container {
-    padding: 90px 40px;
-  }
-  .about-content {
-    gap: 0 30px;
-    margin: 0;
-  }
-
-  .about-detail h2 {
-    font-size: 40px;
-  }
-  .about-detail p {
-    font-size: 17px;
-    line-height: 1.6;
-  }
-  .about-detail a {
-    font-size: 16px;
-    padding: 10px 40px;
-  }
-
-  /* Book A Table Section */
-  .book-a-table-container {
-    padding: 90px 40px 60px;
-    gap: 20px;
-  }
-  .form-section {
-    min-width: 300px;
-  }
-  .form-title {
-    font-size: 40px;
-  }
-  .form-input {
-    font-size: 16px;
-    padding: 12px 20px;
-  }
-  .form-input::placeholder {
-    font-size: 16px;
-  }
-  .dropdown-select,
-  .dropdown-icon,
-  .date-input {
-    font-size: 16px;
-  }
-  .form-group button {
-    font-size: 16px;
-    margin: 0;
-  }
-  .map-section {
-    top: 80px;
-  }
-
-  .map-container {
-    width: 50vw;
-    height: 360px;
-    top: 0;
-    right: 0;
-  }
-  .fullscreen-btn {
-    top: 10px;
-  }
-  /* Testimonial Section */
-  .testimonial-container {
-    padding: 0 40px;
-  }
-  .testimonial-heading {
-    margin-bottom: 40px;
-  }
-  .testimonial-heading h1 {
-    font-size: 40px;
-  }
-
-  .testimonial-wrapper {
-    gap: 0 20px;
-  }
-
-  .testimonial-message {
-    padding: 20px 25px;
-    border-radius: 5px;
-  }
-  .testimonial-message p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
-  .testimonial-message h2 {
-    font-size: 20px;
-    font-weight: 400;
-  }
-  .testimonial-slider {
-    margin: 50px 0 80px;
-  }
-
-  /* Footer section */
-  .footer-wrapper {
-    gap: 20px;
-  }
-  .footer-heading h1 {
-    font-size: 30px;
-  }
-  .footer-content .contact-item i {
-    font-size: 14px;
-  }
-  .footer-content,
-  .contact-item,
-  .description,
-  .opening-hours {
-    font-size: 16px !important;
-  }
-}
-/* Resposnive for the Screen width 768px */
-@media screen and (max-width: 768px) {
-  /* Navbar Section */
-  .nav-hero {
     height: 150vh;
-    padding: 0;
   }
-  .logo a {
-    font-size: 32px;
+  .bg-img {
+    background-size: 200% auto;
+    background-position: top bottom;
+    height: 150vh;
   }
-  .nav-links {
-    display: none;
-  }
-  .nav-btn {
-    justify-content: flex-end;
-  }
-  .nav-btn i {
-    font-size: 18px;
-  }
+  .nav-links,
   .nav-btn button {
     display: none;
   }
-  .bg-img {
-    height: 150vh;
-    background-size: 180% auto;
-    background-position: bottom bottom;
+  .nav-btn {
+    align-items: flex-end;
   }
-  .hero-content {
-    max-width: 350px;
+  .logo a {
+    font-size: 32px;
   }
 
+  /* ========== HERO SECTION ========== */
+  .hero-content h1,
+  .hero-content p {
+    margin-bottom: 0.9rem;
+  }
   .hero-content p {
     font-size: 0.9rem;
     line-height: 1.4;
   }
-  .hero-content button {
-    font-size: 16px;
-    margin-top: 0;
-  }
-  /* Feature Section */
+
+  /* ========== FEATURE SECTION ========== */
   .feature-container {
-    gap: 30px;
-    padding: 40px;
+    padding: 30px 0px;
+    flex-direction: column;
   }
   .feature-card {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 350px;
-    padding: 20px 10px;
+    width: 520px;
   }
   .feature-card img {
-    width: 170px;
-    height: 170px;
-    margin-right: 0;
-  }
-  .feature-card-content {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 20px;
-    margin-top: 10px;
+    width: 160px;
+    height: 160px;
   }
   .feature-card-content h3 {
     font-size: 24px;
@@ -1237,346 +776,152 @@
   .feature-card-content span {
     font-size: 16px;
   }
-  .btn {
-    font-size: 16px;
-    padding: 10px 35px;
-  }
-
-  /* Menu Section */
-  .menu-container h1 {
-    padding: 0 0 25px;
-  }
-  .filter-menu {
-    gap: 8px;
-  }
-  .filter-menu li {
-    font-size: 18px;
-    margin-top: 20px;
-    padding: 7px 20px;
-  }
-
-  /* Menu Card Section */
-  .menu-card-container {
-    flex-wrap: wrap;
-    padding: 0 40px;
-    gap: 25px 0;
-  }
-  .menu-card {
-    width: 330px;
-  }
-  .menu-card-image {
-    padding: 20px;
-  }
-
-  /* View Button Section */
-  .view-more-btn {
-    margin: 50px 0;
-  }
-  .view-more-btn a {
-    padding: 20px 25px;
-  }
-
-  /* About Section */
-  .about-container {
-    padding: 90px 40px;
-  }
-  .about-content {
-    gap: 0 30px;
-    margin: 0;
-  }
-
-  .about-detail h2 {
-    font-size: 40px;
-  }
-  .about-detail p {
-    font-size: 17px;
-    line-height: 1.6;
-  }
-  .about-detail a {
-    font-size: 16px;
-    padding: 10px 40px;
-  }
-
-  /* Book A Table Section */
-  .book-a-table-container {
-    padding: 90px 40px 60px;
-    gap: 20px;
-  }
-  .form-section {
-    min-width: 300px;
-  }
-  .form-title {
-    font-size: 40px;
-  }
-  .form-input {
-    font-size: 16px;
-    padding: 12px 20px;
-  }
-  .form-input::placeholder {
-    font-size: 16px;
-  }
-  .dropdown-select,
-  .dropdown-icon,
-  .date-input {
-    font-size: 16px;
-  }
-  .form-group button {
-    font-size: 16px;
-    margin: 0;
-  }
-  .map-section {
-    top: 80px;
-  }
-
-  .map-container {
-    width: 50vw;
-    height: 360px;
-    top: 0;
-    right: 0;
-  }
-  .fullscreen-btn {
-    top: 10px;
-  }
-  /* Testimonial Section */
-  .testimonial-container {
-    padding: 0 40px;
-  }
-  .testimonial-heading {
-    margin-bottom: 40px;
-  }
-  .testimonial-heading h1 {
-    font-size: 40px;
-  }
-
-  .testimonial-wrapper {
-    gap: 0 20px;
-  }
-
-  .testimonial-message {
-    padding: 20px 25px;
-    border-radius: 5px;
-  }
-  .testimonial-message p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
-  .testimonial-message h2 {
-    font-size: 20px;
-    font-weight: 400;
-  }
-  .testimonial-slider {
-    margin: 50px 0 80px;
-  }
-
-  /* Footer section */
-  .footer-wrapper {
-    gap: 20px;
-  }
-  .footer-heading h1 {
-    font-size: 30px;
-  }
-  .footer-content .contact-item i {
-    font-size: 14px;
-  }
-  .footer-content,
-  .contact-item,
-  .description,
-  .opening-hours {
-    font-size: 16px !important;
-  }
-}
-
-/* Responsive Website Styling */
-@media screen and (max-width: 600px) {
-  /* Navbar Section */
-  .nav-hero {
-    padding: 0;
-  }
-  .logo a {
-    font-size: 30px;
-  }
-  .nav-links {
-    display: none;
-  }
-  .nav-btn {
-    justify-content: flex-end;
-  }
-  .nav-btn i {
-    font-size: 18px;
-  }
-  .nav-btn button {
-    display: none;
-  }
-  .bg-img {
-    background-size: 200% auto;
-    background-position: bottom bottom;
-  }
-  .hero-content h1 {
-    font-size: 3.2rem;
-  }
-  .hero-content p {
-    font-size: 0.8rem;
-    line-height: 1.4;
-  }
-  .hero-content button {
-    font-size: 16px;
-    padding: 10px 50px;
-    margin-top: 0;
-  }
-  /* Feature Section */
-  .feature-container {
-    flex-direction: column;
-  }
-  .feature-card {
-    width: 500px;
-  }
-  .feature-card img {
-    width: 170px;
-    height: 170px;
-  }
-  .feature-card-content h3 {
-    font-size: 24px;
-  }
-  .feature-card-content h1 {
-    font-size: 36px;
-  }
-  .feature-card-content span {
-    font-size: 20px;
-  }
-  .btn {
-    font-size: 16px;
+  .feature-btn {
     padding: 10px 30px;
+    font-size: 16px;
   }
 
-  /* Menu Section */
+  /* ========== MENU SECTION ========== */
+  .menu-container {
+    padding: 0;
+    margin-top: 30px;
+  }
   .filter-menu {
-    gap: 8px;
+    gap: 5px;
   }
   .filter-menu li {
     font-size: 16px;
-    margin-top: 20px;
-    padding: 7px 20px;
+    margin: 24px 0;
   }
-
-  /* Menu Card Section */
+  /* ========== MENU CARD SECTION ========== */
   .menu-card-container {
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 0 40px;
+    padding: 30px 40px;
+    gap: 30px 0;
   }
   .menu-card {
     width: 250px;
   }
   .menu-card-image {
-    padding: 20px;
+    padding: 10px;
   }
-
-  /* View Button Section */
+  .menu-card-image img {
+    max-height: 150px;
+  }
+  .menu-card-content h5 {
+    font-size: 22px;
+    line-height: 0.8;
+  }
+  .menu-card-content p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  /* ========== VIEW MORE BUTTON SECTION ========== */
   .view-more-btn {
-    margin: 50px 0;
+    margin: 20px 0 100px;
   }
   .view-more-btn a {
-    padding: 20px 25px;
+    padding: 10px 30px;
+    font-size: 16px;
   }
-
-  /* About Section */
+  /* ========== ABOUT SECTION ========== */
   .about-container {
     padding: 90px 40px;
   }
   .about-image {
     display: none;
   }
-
-  .about-detail h2 {
-    font-size: 36px;
-  }
-  .about-detail p {
-    font-size: 17px;
-    line-height: 1.4;
-  }
-  .about-detail a {
-    font-size: 16px;
-    padding: 10px 40px;
-  }
-
-  /* Book A Table Section */
-  .book-a-table-container {
-    flex-direction: column;
-    padding: 90px 40px;
+  .about-detail {
     gap: 10px;
   }
+  .about-detail h2 {
+    font-size: 40px;
+  }
+  .about-detail p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .about-detail a {
+    padding: 10px 30px;
+    font-size: 16px;
+  }
+  /* ========== BOOK A TABLE SECTION ========== */
+  .book-a-table-container {
+    padding: 70px 30px;
+    flex-direction: column;
+  }
+  .form-section {
+    padding: 0 10px;
+  }
   .form-title {
-    font-size: 38px;
+    font-size: 40px;
+    margin-bottom: 15px;
   }
-  .form-input {
-    font-size: 16px;
-    padding: 12px 20px;
-  }
-  .form-input::placeholder {
-    font-size: 16px;
-  }
+  .form-input,
   .dropdown-select,
-  .dropdown-icon,
   .date-input {
     font-size: 16px;
+    border: 1px solid #4a5464;
   }
-  .form-group button {
+  .form-input::placeholder,
+  .dropdown-icon {
     font-size: 16px;
-    margin: 0;
+  }
+  .book-a-table-btn {
+    font-size: 16px;
+    padding: 10px 30px;
+    margin-bottom: 0;
+  }
+  .map-section {
+    padding: 0 10px;
+    align-self: auto;
   }
   .map-container {
-    width: 86vw;
-    height: 300px;
+    top: 0;
   }
-  /* Testimonial Section */
+  .fullscreen-btn {
+    top: 10px;
+  }
+
+  /* ========== TESTIMONIAL SECTION ========== */
   .testimonial-container {
-    padding: 70px 40px 50px;
+    padding: 0 40px;
   }
   .testimonial-heading {
-    margin-bottom: 40px;
+    margin-top: 0;
   }
   .testimonial-heading h1 {
     font-size: 40px;
   }
-
   .testimonial-wrapper {
-    flex-direction: column;
-  }
-
-  .testimonial-message {
-    padding: 20px 25px;
-    border-radius: 5px;
-  }
-  .testimonial-message p {
-    font-size: 15px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
-  .testimonial-message h2 {
-    font-size: 20px;
-    font-weight: 400;
+    gap: 0 30px;
+    margin: 0;
   }
   .testimonial-slider {
-    margin: 50px 0;
+    margin: 50px 0 100px;
   }
 
-  /* Footer section */
+  /* ========== FOOTER SECTION ========== */
   .footer-wrapper {
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
   }
   .footer-heading h1 {
-    font-size: 30px;
+    font-size: 32px;
+    margin-bottom: 20px;
   }
+
   .footer-content .contact-item i {
     font-size: 14px;
+    margin-right: 6px;
   }
-  .footer-content,
-  .contact-item,
-  .description,
-  .opening-hours {
-    font-size: 16px !important;
+  .footer-content .description {
+    font-size: 16px;
+  }
+  .footer-content .opening-hours {
+    font-size: 16px;
+  }
+  .social-icons {
+    margin-bottom: 20px;
   }
 }
