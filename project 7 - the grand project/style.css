@@ -176,25 +176,30 @@
 /* Feature Section */
 .feature-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 30px;
   padding: 0 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .feature-card {
   width: 600px;
   background-color: #222831;
   border-radius: 5px;
-  margin-top: 50px; /* Change it after the design*/
+  margin-top: 50px;
   padding: 20px 15px;
   transition: transform 0.3s ease;
   display: flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .feature-card:hover img {
   transform: scale(1.03);
-  transition: trasnform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .feature-card img {
@@ -272,19 +277,22 @@
 /* Menu Card Section Styling */
 .menu-card-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
   padding: 0 80px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .menu-card {
-  width: 400px;
+  width: 360px;
   display: flex;
   flex-direction: column;
   border-radius: 15px;
   overflow: hidden;
   background-color: #222831;
+  flex-shrink: 0;
 }
 .menu-card-image {
   background: #f1f2f3;
@@ -422,6 +430,8 @@
   display: flex;
   gap: 40px;
   padding: 90px 80px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .form-section {
@@ -430,6 +440,7 @@
   flex-direction: column;
   justify-content: center;
   min-width: 500px;
+  max-width: 600px;
 }
 
 .form-title {
@@ -506,6 +517,7 @@
   position: relative;
   height: fit-content;
   align-self: flex-start;
+  max-width: 600px;
 }
 .map-container {
   width: 100%;
@@ -532,6 +544,8 @@
 /* Testimonial Section Styling */
 .testimonial-container {
   padding: 50px 90px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .testimonial-heading {
@@ -549,7 +563,9 @@
 .testimonial-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 .testimonial-content {
   display: flex;
@@ -557,6 +573,8 @@
   justify-content: center;
   gap: 30px;
   position: relative;
+  flex-shrink: 0;
+  max-width: 600px;
 }
 
 .testimonial-message {
@@ -628,7 +646,7 @@
 .footer-container {
   background-color: #222831;
   color: #ffffff;
-  padding: 60px 40px 30px 40px;
+  padding: 60px 40px 30px;
 }
 
 .footer-wrapper {
@@ -637,7 +655,7 @@
   align-items: flex-start;
   max-width: 1200px;
   margin: 0 auto;
-  gap: 40px;
+  gap: 0 40px;
 }
 
 .footer-content {
@@ -724,28 +742,36 @@
   color: #ffffff;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 767px) {
   .nav-hero {
-    padding: 0;
-    height: 150vh;
+    padding: 0 20px;
+    height: 120vh;
   }
   .bg-img {
-    background-size: 200% auto;
+    background-size: 150% auto;
     background-position: top bottom;
-    height: 150vh;
+    height: 120vh;
+  }
+  .navbar-container {
+    padding: 20px 15px; /* 🔹 Reduce inner padding */
   }
   .nav-links,
   .nav-btn button {
     display: none;
   }
-  .nav-btn {
-    align-items: flex-end;
+
+  .nav-btn i {
+    margin-right: 10px;
+    font-size: 16px;
   }
   .logo a {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   /* ========== HERO SECTION ========== */
+  .hero-container {
+    padding: 20px 15px;
+  }
   .hero-content h1,
   .hero-content p {
     margin-bottom: 0.9rem;
@@ -757,27 +783,32 @@
 
   /* ========== FEATURE SECTION ========== */
   .feature-container {
-    padding: 30px 0px;
+    padding: 20px 25px;
     flex-direction: column;
+    gap: 20px;
   }
   .feature-card {
-    width: 520px;
+    width: 100%;
+    max-width: 500px;
+    flex-direction: row;
+    align-items: center;
   }
   .feature-card img {
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  .feature-card-content {
+    text-align: start;
   }
   .feature-card-content h3 {
-    font-size: 24px;
+    font-size: 22px;
   }
   .feature-card-content h1 {
-    font-size: 40px;
+    font-size: 32px;
   }
   .feature-card-content span {
-    font-size: 16px;
-  }
-  .feature-btn {
-    padding: 10px 30px;
     font-size: 16px;
   }
 
@@ -795,24 +826,26 @@
   }
   /* ========== MENU CARD SECTION ========== */
   .menu-card-container {
-    padding: 30px 40px;
-    gap: 30px 0;
+    padding: 20px 30px;
+    gap: 20px;
+    justify-content: center;
+    max-width: none;
   }
   .menu-card {
-    width: 250px;
+    width: 260px;
   }
   .menu-card-image {
-    padding: 10px;
+    padding: 15px;
   }
   .menu-card-image img {
-    max-height: 150px;
+    max-height: 130px;
   }
   .menu-card-content h5 {
-    font-size: 22px;
-    line-height: 0.8;
+    font-size: 17px;
+    line-height: 1.2;
   }
   .menu-card-content p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.4;
   }
   /* ========== VIEW MORE BUTTON SECTION ========== */
@@ -831,7 +864,7 @@
     display: none;
   }
   .about-detail {
-    gap: 10px;
+    gap: 15px;
   }
   .about-detail h2 {
     font-size: 40px;
@@ -848,6 +881,12 @@
   .book-a-table-container {
     padding: 70px 30px;
     flex-direction: column;
+    gap: 30px;
+    max-width: none;
+  }
+  .form-section,
+  .map-section {
+    max-width: none;
   }
   .form-section {
     padding: 0 10px;
@@ -885,6 +924,7 @@
   /* ========== TESTIMONIAL SECTION ========== */
   .testimonial-container {
     padding: 0 40px;
+    max-width: none;
   }
   .testimonial-heading {
     margin-top: 0;
@@ -893,8 +933,7 @@
     font-size: 40px;
   }
   .testimonial-wrapper {
-    gap: 0 30px;
-    margin: 0;
+    gap: 25px;
   }
   .testimonial-slider {
     margin: 50px 0 100px;
@@ -911,7 +950,7 @@
     margin-bottom: 20px;
   }
 
-  .footer-content .contact-item i {
+  .footer-content .contact-item i span {
     font-size: 14px;
     margin-right: 6px;
   }
@@ -923,5 +962,320 @@
   }
   .social-icons {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .nav-hero {
+    padding: 0 30px;
+    min-height: 130vh;
+  }
+  .bg-img {
+    height: 130vh;
+    background-size: 140% auto;
+    background-position: top bottom;
+  }
+  .navbar-container {
+    padding: 22px 25px;
+  }
+  .nav-links {
+    display: none; /* Hide nav links at this breakpoint */
+  }
+  .nav-btn {
+    display: flex;
+    gap: 15px;
+  }
+  .nav-btn i {
+    font-size: 18px;
+    margin-right: 0;
+  }
+  .nav-btn button {
+    display: inline-block;
+    font-size: 16px;
+    padding: 6px 20px;
+  }
+  .logo a {
+    font-size: 32px;
+  }
+
+  /* ========== HERO SECTION ========== */
+  .hero-container {
+    padding: 22px 25px;
+  }
+  .hero-content {
+    max-width: 420px;
+  }
+  .hero-content h1,
+  .hero-content p {
+    margin-bottom: 1.1rem;
+  }
+  .hero-content p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  /* ========== FEATURE SECTION ========== */
+  .feature-container {
+    padding: 20px 30px; /* Reduced padding */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+  .feature-card {
+    width: 48%; /* ✅ Two cards per row */
+    flex-direction: column; /* Content in column */
+    align-items: center;
+  }
+  .feature-card img {
+    width: 160px;
+    height: 160px;
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+  .feature-card-content {
+    text-align: center;
+  }
+  .feature-card-content h3 {
+    font-size: 22px;
+  }
+  .feature-card-content h1 {
+    font-size: 34px; /* ✅ Reduced size */
+  }
+  .feature-card-content span {
+    font-size: 16px;
+  }
+  /* ========== MENU CARD SECTION ========== */
+  .menu-card-container {
+    padding: 25px 40px;
+    gap: 25px; /* Medium gap */
+    justify-content: center;
+    max-width: 1200px; /* Intermediate max-width */
+  }
+  .menu-card {
+    width: 320px;
+  }
+
+  /* ========== ABOUT SECTION ========== */
+  .about-content {
+    gap: 10px 30px;
+  }
+  .about-image {
+    display: flex;
+  }
+  /* ========== BOOK A TABLE SECTION ========== */
+  .book-a-table-container {
+    flex-direction: row;
+    gap: 30px;
+    max-width: 1200px;
+  }
+  .form-section {
+    min-width: 380px;
+  }
+  .book-a-table-btn {
+    padding: 10px 50px;
+  }
+
+  .map-container {
+    width: 100%;
+    height: 375px;
+    top: 70px;
+  }
+  .fullscreen-btn {
+    top: 80px;
+    right: 10px;
+  }
+  .testimonial-container {
+    max-width: 1200px; /* Intermediate max-width */
+  }
+
+  .testimonial-wrapper {
+    gap: 35px; /* Medium gap */
+  }
+  /* ========== FOOTER SECTION ========== */
+  .footer-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .footer-content .contact-item i {
+    font-size: 13px;
+  }
+  .footer-content .contact-item span {
+    font-size: 16px;
+  }
+  .social-icons {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .nav-hero {
+    min-height: 110vh;
+    padding: 0 40px;
+  }
+  .bg-img {
+    background-size: 110% auto;
+    height: 110vh;
+  }
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 30px;
+  }
+
+  .nav-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: static;
+    gap: 28px;
+    left: 50%;
+    transform: none;
+  }
+  .nav-links a {
+    font-size: 16px;
+  }
+  .nav-btn {
+    gap: 10px;
+  }
+  .nav-btn i {
+    font-size: 15px;
+  }
+  .nav-btn button {
+    display: inline-block;
+    font-size: 15px;
+    padding: 6px 22px;
+  }
+  .logo a {
+    font-size: 34px;
+  }
+
+  /* ========== HERO SECTION ========== */
+  .hero-container {
+    padding: 22px 30px;
+  }
+  .hero-content {
+    max-width: 520px;
+  }
+  /* ========== FEATURE SECTION ========== */
+  .feature-container {
+    padding: 25px 40px;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .feature-card {
+    width: 48%;
+    flex-direction: row;
+    align-items: center;
+  }
+  .feature-card img {
+    width: 170px;
+    height: 170px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  .feature-card-content {
+    text-align: start;
+  }
+  .feature-card-content h3 {
+    font-size: 24px;
+  }
+  .feature-card-content h1 {
+    font-size: 38px;
+  }
+  .feature-card-content span {
+    font-size: 18px;
+  }
+  /* ========== MENU CARD SECTION ========== */
+  .menu-card-container {
+    padding: 30px 50px;
+    max-width: 1300px; /* Larger max-width */
+    gap: 20px; /* Standard gap */
+    justify-content: center;
+  }
+  .menu-card {
+    width: 300px;
+  }
+  .book-a-table-container {
+    max-width: 1300px; /* Larger max-width */
+  }
+
+  .testimonial-container {
+    max-width: 1300px; /* Larger max-width */
+  }
+
+  .testimonial-wrapper {
+    gap: 40px; /* Standard gap */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-hero {
+    padding: 0 80px;
+    min-height: 100vh;
+  }
+  .bg-img {
+    background-size: cover;
+    height: 100vh;
+  }
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+  }
+  .nav-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: static;
+    gap: 40px;
+    left: 50%;
+    transform: none;
+  }
+
+  /* ========== FEATURE CARD SECTION ========== */
+  .feature-container {
+    padding: 30px 60px;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .feature-card {
+    width: 48%;
+    flex-direction: row;
+    align-items: center;
+  }
+  .feature-card img {
+    width: 200px;
+    height: 200px;
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+  .feature-card-content {
+    padding: 20px;
+    text-align: start;
+  }
+
+  /* ========== MENU CARD SECTION ========== */
+  .menu-card-container {
+    max-width: 1400px; /* Full max-width */
+    padding: 30px 20px;
+    gap: 30px; /* Standard gap */
+    justify-content: center;
+  }
+  .menu-card {
+    width: 360px;
+  }
+  .book-a-table-container {
+    max-width: 1400px; /* Full max-width */
+  }
+
+  .testimonial-container {
+    max-width: 1400px; /* Full max-width */
+  }
+
+  .testimonial-wrapper {
+    gap: 40px; /* Standard gap */
   }
 }
